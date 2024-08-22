@@ -3,10 +3,7 @@ file(GLOB_RECURSE PUBLIC_HEADERS
        *.h*
         )
 # 将项目中所有匹配 *.cpp 模式的源代码文件的列表存储在 SOURCE_FILES 变量中
-file(GLOB SOURCE_FILES
-        ${SOURCE_FILES}
-        *.cpp
-        )
+file(GLOB SOURCE_FILES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 
 # 头文件会在以下目录进行搜索
 include_directories(
