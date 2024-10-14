@@ -20,3 +20,9 @@ pacman -S make
 同样也需要把make添加到系统环境变量，方法同上
 <br>
 之后打开vscode，安装插件C/C++，CMake，CMake Tools即可使用
+<br>
+# 记得在include里面的CMake去掉下面两个任选其一的注释，具体看个人：
+```
+add_library(${LIBRARY_NAME} STATIC ${SOURCE_FILES})
+add_library(${LIBRARY_NAME} SHARED ${SOURCE_FILES})
+```
