@@ -1,3 +1,11 @@
+#编译选项(可选)
+add_compile_options(
+    -std=c++17      # 明确指定 C++17 标准
+    -pedantic       # 严格遵循 C++ 标准，禁止非标准扩展
+    -Wall           # 启用所有常规警告
+    -Wextra         # 启用额外的警告
+    -Werror         # 警告当作报错
+)
 #指定了构建该项目所需的 CMake 的最低版本为 3.21。这确保在运行时使用符合或高于指定版本的 CMake。
 cmake_minimum_required(VERSION 3.21)
 #定义了项目的名称为 projectName，并指定了该项目将会用到 C 和 C++ 编程语言。
