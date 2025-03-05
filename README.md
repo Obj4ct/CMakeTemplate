@@ -26,3 +26,11 @@ pacman -S make
 add_library(${LIBRARY_NAME} STATIC ${SOURCE_FILES})
 add_library(${LIBRARY_NAME} SHARED ${SOURCE_FILES})
 ```
+# 还要修改的CMake
+src第20行：YOUR_LIBRARY_NAME 替换
+<br>
+include第14行：YOUR_LIBRARY_NAME 替换
+<br>
+根CMake：12行：projectName 替换
+
+# 以上操作缺一不可
