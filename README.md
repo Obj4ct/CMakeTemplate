@@ -1,5 +1,5 @@
 # CMakeTemplate
-一个基础的不同文件夹包含不同cmake的模板，可以直接cv，其中include文件夹为头文件存放位置，src为源文件存放位置
+一个基础的不同文件夹包含不同cmake的模板，可以直接clone，其中include文件夹为头文件存放位置，src为源文件存放位置
 <br>
 # 使用方法
 Windows下首先需要安装[CMake](https://cmake.org/download/ "下载CMake")，下载完成后把cmake安装位置下的bin目录添加到系统环境变量
@@ -21,7 +21,7 @@ pacman -S make
 <br>
 之后打开vscode，安装插件C/C++，CMake，CMake Tools即可使用
 <br>
-# 记得在include里面的CMake去掉下面两个任选其一的注释，具体看个人：
+# 在include里面的CMake去掉下面两个其中一个的注释（静态库和动态库）：
 ```
 add_library(${LIBRARY_NAME} STATIC ${SOURCE_FILES})
 add_library(${LIBRARY_NAME} SHARED ${SOURCE_FILES})
